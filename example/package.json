@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "admin-on-rest": "^1.4.0",
     "aor-json-rest-client": "~2.1.0",
     "aor-language-french": "~1.8.0",
     "aor-rich-text-input": "~1.0.0",
@@ -22,5 +23,9 @@
     "style-loader": "~0.18.2",
     "webpack": "~3.0.0",
     "webpack-dev-server": "~2.5.0"
+  },
+  "dependencies": {
+    "aor-jsonapi-client": "^0.2.0",
+    "react-rest-client": "^1.0.1"
   }
 }
