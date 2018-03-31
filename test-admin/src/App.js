@@ -1,13 +1,11 @@
-import React from 'react';
-import { jsonServerRestClient, Admin, Resource } from 'admin-on-rest';
-import { PostList } from './posts';
-import { UserList } from './users';
+import React from "react";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import Main from "./Main";
 
 const App = () => (
-    <Admin restClient={jsonServerRestClient('http://jsonplaceholder.typicode.com')}>
-        <Resource name="posts" list={PostList} />
-        <Resource name="users" list={UserList} />
-    </Admin>
+    <MuiThemeProvider>
+        <Main />
+    </MuiThemeProvider>
 );
 
 export default App;
